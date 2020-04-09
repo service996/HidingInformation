@@ -42,10 +42,10 @@
 
 ## 使用工具
 
-<font color='RED'>UltraEdit</font>或者Hex_Editor等软件
+<font color='#FF0000'>UltraEdit</font>或者Hex_Editor等软件
 
-<font color='RED'>VisioStudio</font>或者CodeBlocks等C++代码编辑器
+<font color='#FF0000'>VisioStudio</font>或者CodeBlocks等C++代码编辑器
 
-红色的是本人所使用的工具
+<font color='#FF0000'>红色</font>的是本人所使用的工具
 
 工具的使用因人而异，核心是代码及其中的算法理解
