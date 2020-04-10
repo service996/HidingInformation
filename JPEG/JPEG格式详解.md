@@ -14,62 +14,62 @@ JFIF文件格式直接使用JPEG标准爲应用程式定义的许多标记，因
 
 下面是其中的8个标记：
 
-> SOI 0xD8　 图像开始
-> 　APP0 0xE0　 JFIF应用
-> 数据块
-> 　APPn 0xE1 - 0xEF　 其他的应用数据块(n, 1～15)
-> 　DQT 0xDB　 量化表
-> 　SOF0 0xC0　 帧开始
-> 　DHT 0xC4　 霍夫曼(Huffman)表
-> 　SOS 0xDA　 
-> 扫描线开始
-> 　EOI 0xD9　 图像结束
+> SOI 0xD8　 图像开始 </br>
+> 　APP0 0xE0　 JFIF应用</br>
+> 数据块</br>
+> 　APPn 0xE1 - 0xEF　 其他的应用数据块(n, 1～15)</br>
+> 　DQT 0xDB　 量化表</br>
+> 　SOF0 0xC0　 帧开始</br>
+> 　DHT 0xC4　 霍夫曼(Huffman)表</br>
+> 　SOS 0xDA　 </br>
+> 扫描线开始</br>
+> 　EOI 0xD9　 图像结束</br>
 
  JPEG定义的标记：
 
-> Symbol 
-> (符号)    Code Assignment
-> (标记代码)    Deforbiddenion
-> (说明)
-> Start Of Frame markers, non-hierarchical Huffman coding
-> SOF0    0xFFC0    Baseline DCT
-> SOF1    0xFFC1    Extended sequential DCT
-> SOF2    0xFFC2    Progressive DCT
-> SOF3    0xFFC3    Spatial (sequential) lossless 
-> Start Of Frame markers, hierarchical Huffman coding
-> SOF5    0xFFC5    Differential sequential DCT
-> SOF6    0xFFC6    Differential progressive DCT
-> SOF7    0xFFC7    Differential spatial lossless
-> Start Of Frame markers, non-hierarchical arithmetic coding
-> JPG    0xFFC8    Reserved for JPEG extensions
-> SOF9    0xFFC9    Extended sequential DCT
-> SOF10    0xFFCA    Progressive DCT
-> SOF11    0xFFCB    Spatial (sequential) Lossless
-> Start Of Frame markers, hierarchical arithmetic coding
-> SOF13    0xFFCD    Differential sequential DCT
-> SOF14    0xFFCE    Differential progressive DCT
-> SOF15    0xFFCF    Differential spatial Lossless
-> Huffman table specification
-> DHT    0xFFC4    Define Huffman table(s)
-> arithmetic coding conditioning specification
-> DAC    0xFFCC    Define arithmetic conditioning table
-> Restart interval termination
-> RSTm    0xFFD0～0xFFD7    Restart with modulo 8 counter m
-> Other marker
-> SOI    0xFFD8    Start of image
-> EOI    0xFFD9    End of image
-> SOS    0xFFDA    Start of scan
-> DQT    0xFFDB    Define quantization table(s)
-> DNL    0xFFDC    Define number of lines
-> DRI    0xFFDD    Define restart interval
-> DHP    0xFFDE    Define hierarchical progression
-> EXP    0xFFDF    Expand reference image(s) 
-> APPn    0xFFE0～0xFFEF    Reserved for application use
-> JPGn    0xFFF0～0xFFFD    Reserved for JPEG extension
-> COM    0xFFFE    Comment
-> Reserved markers
-> TEM    0xFF01    For temporary use in arithmetic coding
-> RES    0xFF02～0xFFBF    Reserved
+> Symbol </br>
+> (符号)    Code Assignment</br>
+> (标记代码)    Deforbiddenion</br>
+> (说明)</br>
+> Start Of Frame markers, non-hierarchical Huffman coding</br>
+> SOF0    0xFFC0    Baseline DCT</br>
+> SOF1    0xFFC1    Extended sequential DCT</br>
+> SOF2    0xFFC2    Progressive DCT</br>
+> SOF3    0xFFC3    Spatial (sequential) lossless </br>
+> Start Of Frame markers, hierarchical Huffman coding</br>
+> SOF5    0xFFC5    Differential sequential DCT</br>
+> SOF6    0xFFC6    Differential progressive DCT</br>
+> SOF7    0xFFC7    Differential spatial lossless</br>
+> Start Of Frame markers, non-hierarchical arithmetic coding</br>
+> JPG    0xFFC8    Reserved for JPEG extensions</br>
+> SOF9    0xFFC9    Extended sequential DCT</br>
+> SOF10    0xFFCA    Progressive DCT</br>
+> SOF11    0xFFCB    Spatial (sequential) Lossless</br>
+> Start Of Frame markers, hierarchical arithmetic coding</br>
+> SOF13    0xFFCD    Differential sequential DCT</br>
+> SOF14    0xFFCE    Differential progressive DCT</br>
+> SOF15    0xFFCF    Differential spatial Lossless</br>
+> Huffman table specification</br>
+> DHT    0xFFC4    Define Huffman table(s)</br>
+> arithmetic coding conditioning specification</br>
+> DAC    0xFFCC    Define arithmetic conditioning table</br>
+> Restart interval termination</br>
+> RSTm    0xFFD0～0xFFD7    Restart with modulo 8 counter m</br>
+> Other marker</br>
+> SOI    0xFFD8    Start of image</br>
+> EOI    0xFFD9    End of image</br>
+> SOS    0xFFDA    Start of scan</br>
+> DQT    0xFFDB    Define quantization table(s)</br>
+> DNL    0xFFDC    Define number of lines</br>
+> DRI    0xFFDD    Define restart interval</br>
+> DHP    0xFFDE    Define hierarchical progression</br>
+> EXP    0xFFDF    Expand reference image(s) </br>
+> APPn    0xFFE0～0xFFEF    Reserved for application use</br>
+> JPGn    0xFFF0～0xFFFD    Reserved for JPEG extension</br>
+> COM    0xFFFE    Comment</br>
+> Reserved markers</br>
+> TEM    0xFF01    For temporary use in arithmetic coding</br>
+> RES    0xFF02～0xFFBF    Reserved</br>
 
 ## 文件组成部分
 
@@ -79,7 +79,7 @@ JFIF文件格式直接使用JPEG标准爲应用程式定义的许多标记，因
 
 00-01h	2字节	0xFFD8
 
-
+</br>
 
 ### APP0标记（Marker）
 
@@ -123,7 +123,7 @@ JFIF文件格式直接使用JPEG标准爲应用程式定义的许多标记，因
 
 本段（APP0）可以包含图像的一个微缩版本，存为24位的RGB像素。如果没有微缩图像（这种情况更常见），则⑦“缩略图水平像素数目”和⑧“缩略图垂直像素数目”的值均为0
 
-
+</br>
 
 ### APPn标记（Markers）
 
@@ -139,7 +139,7 @@ JFIF文件格式直接使用JPEG标准爲应用程式定义的许多标记，因
 * 长度：(m+2)h	2字节内容不定（设为n（10进制））（本字段与下一字段的总长度）
 * 详细信息： (m+4)h	n－2字节（即长度减2）内容不定
 
-
+</br>
 
 14-15h	FFEE
 
@@ -147,7 +147,7 @@ JFIF文件格式直接使用JPEG标准爲应用程式定义的许多标记，因
 
 18-23h	41 64 6F 62 65 00 64 00 00 00 00 01
 
-
+</br>
 
 ### 一个或者多个量化表DQT
 
@@ -172,7 +172,7 @@ B. 表项
 
 
 
-
+</br>
 
 
 
@@ -244,7 +244,7 @@ bbh	共1字节	0x11
 
 bch	1字节	内容不定（本分量使用的量化表的ID号）	01
 
-
+</br>
 
 ### 一个或者多个霍夫曼表DHT
 
@@ -274,13 +274,13 @@ D. 内容编码
 
 * 内容编码： (m+17)h n字节内容长，故略)
 
-
+</br>
 
 c7h	00
 
 c8-d7h	00 00 07 01 01 01 01 01 00 00 00 00 00 00 00 00
 
-
+</br>
 
 ### 定义重新开始间隔DRI
 
@@ -296,7 +296,7 @@ bd-beh	2字节	0xFF**DD**
 
 c1-c2h	2字节	内容不定（设为n，则意思是说，每n个MCU块就有一个RSTn标记。第一个标记是RST0，然后是RST1等，RST7后再从RST0重复）	007D
 
-
+</br>
 
 ### 扫描开始SOS
 
@@ -352,7 +352,7 @@ C. 两个4位字段，高位和低位的谱选择 274h 1字节在基本JPEG中�
 
 D. 数据 275h 长度不定内容长，故略
 
-
+</br>
 
 ### 图像结束EOI
 
