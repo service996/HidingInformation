@@ -82,7 +82,7 @@
 
 16位，无压缩（BI_RGB）；无调色板
 
-关于这一点可以参考 [bitBitCount](#bitBitCount)
+关于这一点可以参考 [biBitCount](#biBitCount)
 
 #### 位图数据
 
